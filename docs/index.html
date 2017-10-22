@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta>
+    <meta id="viewport" name="viewport" content="width=320; initial-scale=1.0;maximum-scale=1.0; user-scalable=no;" />
+    <meta name=”apple-mobile-web-app-capable” content=”yes” /> 
+    <!--// 离线应用的另一个技巧-->
+    <meta name=”apple-mobile-web-app-status-bar-style” content=black” /> 
+    <!--// 隐藏状态栏-->
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" /> 
+    <!--指定的iphone中safari顶端的状态条的样式-->
+    <meta content="telephone=no" name="format-detection" />
+<link href="app.cefc823d3b9e929d69c6.css" rel="stylesheet"></head>
+
+<body>
+    <div id='app'>
+        <h1 class="title">排序执行可视化展示</h1>
+
+        <h4>注意:排序动画过程只展示排序过程中数组中数据的变化，并不反应排序的速度，因为chart图表的渲染是异步的，每种算法渲染的次数也控制的不尽相同</h4>
+
+        <button class="numberCreator">随机生成300个数字</button>
+
+        <select class="sortTypes">
+            <option value="0">选择</option>
+            <option value="1">选择排序</option>
+            <option value="2">插入排序</option>
+            <option value="3">自顶向下的归并排序</option>
+            <option value="4">自底向上的归并排序</option>
+            <option value="5">快速排序</option>
+            <option value="6">堆排序</option>
+        </select>
+
+        <div class="chart-container"></div>
+
+    </div>
+<script src="vendors.js"></script><script src="app.cefc823d3b9e929d69c6.js"></script></body>
+
+</html>
