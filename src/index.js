@@ -31,6 +31,9 @@ const select$ = Rx.Observable.fromEvent(query('.sortTypes'), 'change')
             timer: 1
         }
     })
+    .filter(x => {
+        return x.type !== '0'
+    })
     .do(x => {
         currentType = x.type
     })

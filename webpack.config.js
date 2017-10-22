@@ -14,7 +14,7 @@ var config = {
 	output: {
 		path: __dirname + '/docs',
 		filename: '[name].[hash].js',
-		// publicPath: isPro ? '/react-demo/' : '/'
+		//publicPath: isPro ? '/react-demo/' : ''
 	},
 	resolve: {
 		modulesDirectories: ['node_modules', './'],
@@ -24,7 +24,7 @@ var config = {
 		},
 		extensions: ['', '.js', '.html', '.css', '.jsx']
 	},
-	devtool: isPro ? '' : 'eval-source-map',
+	devtool: isPro ? '/rxjs-sort-visualization' : 'eval-source-map',
 	module: {
 		loaders: [
 			{
